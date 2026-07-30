@@ -30,6 +30,14 @@ git add . && git commit -m "descripción" && git push
 El sitio se sirve en `https://clarino.es`. La configuración DNS necesaria
 (registros A al apex + CNAME para www) está documentada más abajo.
 
+## Contacto
+
+- Correo: `contacto@clarino.es`
+- Teléfono: `617 79 14 01`
+
+El formulario de contacto usa [FormSubmit](https://formsubmit.co) apuntando a
+`contacto@clarino.es` (requiere confirmar el primer envío por email).
+
 ### DNS
 
 - Registros `A` para el apex `clarino.es` → IPs de GitHub Pages:
