@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clarino</title>
+  <meta name="description" content="Clarino — próximamente. Estamos preparando algo especial." />
+  <link rel="canonical" href="https://clarino.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clarino" />
+  <meta property="og:description" content="Estamos preparando algo especial." />
+  <meta property="og:url" content="https://clarino.es/" />
+  <meta property="og:locale" content="es_ES" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="hero">
+    <header class="brand">
+      <img src="assets/logo.svg" alt="Clarino" width="48" height="48" />
+      <span>Clarino</span>
+    </header>
+
+    <h1>Estamos preparando algo especial</h1>
+    <p class="lead">
+      Nuestra nueva web está en camino. Muy pronto podrás conocer todo lo que
+      estamos construyendo.
+    </p>
+
+    <form class="notify" action="#" method="post" onsubmit="return false;">
+      <input type="email" name="email" placeholder="tu@email.com" aria-label="Correo electrónico" required />
+      <button type="submit">Avísame</button>
+    </form>
+
+    <footer class="foot">
+      <a href="mailto:info@clarino.es">info@clarino.es</a>
+      <span>&copy; <span id="year"></span> Clarino</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
