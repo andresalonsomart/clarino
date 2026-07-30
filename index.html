@@ -177,36 +177,38 @@
 
   <!-- ============ CONTACTO ============ -->
   <section class="section section--alt" id="contacto">
-    <div class="container contact">
-      <div class="contact__info reveal">
-        <span class="eyebrow">Contacto</span>
-        <h2>Comecemos a poñer orde</h2>
-        <p>Cóntanos que necesitas e buscamos xuntas o mellor xeito de acompañarte. Escribímosche sen compromiso.</p>
-        <p style="margin-top:1.6rem;">
-          <strong>Correo</strong><br>
-          <a href="mailto:contacto@clarino.es">contacto@clarino.es</a>
-        </p>
-        <p>
-          <strong>Teléfono</strong><br>
-          <a href="tel:+34617791401">617 79 14 01</a>
-        </p>
-        <p>
-          <strong>Zona</strong><br>
-          Galicia · desprazamentos a consultar
-        </p>
+    <div class="container contact-simple reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Comecemos a poñer orde</h2>
+      <p class="lead">Cóntanos que necesitas e buscamos xuntos o mellor xeito de acompañarte. Escríbenos sen compromiso e respondémosche o antes posible.</p>
+
+      <div class="contact-methods">
+        <a class="contact-method" href="mailto:contacto@clarino.es">
+          <span class="contact-method__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </span>
+          <span class="contact-method__label">Correo</span>
+          <strong>contacto@clarino.es</strong>
+        </a>
+
+        <a class="contact-method" href="https://wa.me/34617791401?text=Ola%2C%20quero%20informaci%C3%B3n%20sobre%20Clari%C3%B1o" target="_blank" rel="noopener">
+          <span class="contact-method__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.01 2C6.5 2 2 6.48 2 12c0 1.77.46 3.45 1.28 4.95L2 22l5.2-1.24A9.9 9.9 0 0012 22c5.52 0 10-4.48 10-10S17.53 2 12.01 2zm5.2 14.13c-.22.62-1.27 1.18-1.75 1.22-.47.05-.9.23-3.02-.63-2.55-1.03-4.16-3.66-4.28-3.83-.13-.17-1.03-1.37-1.03-2.61 0-1.24.65-1.85.88-2.1.23-.25.5-.31.67-.31l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.11.29.02.46-.09.17-.13.29-.26.44l-.39.46c-.13.13-.26.28-.11.53.15.25.66 1.09 1.42 1.77.98.87 1.8 1.14 2.05 1.27.25.13.4.11.54-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.13.23.09 1.46.69 1.71.82.25.13.42.19.48.29.06.11.06.62-.16 1.24z"/></svg>
+          </span>
+          <span class="contact-method__label">WhatsApp</span>
+          <strong>617 79 14 01</strong>
+        </a>
+
+        <a class="contact-method" href="tel:+34617791401">
+          <span class="contact-method__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
+          </span>
+          <span class="contact-method__label">Teléfono</span>
+          <strong>617 79 14 01</strong>
+        </a>
       </div>
 
-      <form class="form reveal" action="https://formsubmit.co/contacto@clarino.es" method="POST">
-        <input type="hidden" name="_subject" value="Nova consulta desde clarino.es" />
-        <input type="hidden" name="_captcha" value="false" />
-        <label for="nome">Nome</label>
-        <input id="nome" type="text" name="nome" placeholder="O teu nome" required />
-        <label for="email">Correo electrónico</label>
-        <input id="email" type="email" name="email" placeholder="tu@email.com" required />
-        <label for="mensaxe">Como podemos axudarte?</label>
-        <textarea id="mensaxe" name="mensaxe" placeholder="Cóntanos brevemente a túa situación…" required></textarea>
-        <button type="submit" class="btn btn--primary" style="justify-content:center;">Enviar mensaxe</button>
-      </form>
+      <p class="contact-zona">Galicia · desprazamentos a consultar</p>
     </div>
   </section>
 
