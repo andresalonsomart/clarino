@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="gl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página no encontrada — Clarino</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>Páxina non atopada — Clariño</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    body { display: grid; place-items: center; min-height: 100svh; text-align: center; background: var(--oliva); color: #fff; }
+    .e404 { padding: 40px 24px; }
+    .e404 img { height: 60px; margin: 0 auto 28px; }
+    .e404 h1 { color: #fff; font-size: clamp(3rem, 12vw, 6rem); font-weight: 700; margin: 0; }
+    .e404 p { color: rgba(255,255,255,.9); font-weight: 300; max-width: 40ch; margin: .6rem auto 2rem; }
+  </style>
 </head>
 <body>
-  <div class="bg"></div>
-  <main class="hero">
-    <header class="brand">
-      <img src="assets/logo.svg" alt="Clarino" width="48" height="48" />
-      <span>Clarino</span>
-    </header>
+  <div class="e404">
+    <img src="assets/logo-clarino-white.png" alt="Clariño" />
     <h1>404</h1>
-    <p class="lead">La página que buscas no existe o se ha movido.</p>
-    <div class="notify">
-      <a class="notify" href="/" style="text-decoration:none;">
-        <button type="button">Volver al inicio</button>
-      </a>
-    </div>
-  </main>
+    <p>Esta páxina non existe ou moveuse de lugar. Volvamos a poñer as cousas no seu sitio.</p>
+    <a href="/" class="btn btn--light">Volver ao inicio</a>
+  </div>
 </body>
 </html>

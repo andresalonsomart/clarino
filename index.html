@@ -1,50 +1,256 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="gl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clarino</title>
-  <meta name="description" content="Clarino — próximamente. Estamos preparando algo especial." />
+  <title>Clariño — Orde, claridade e equilibrio nos teus espazos</title>
+  <meta name="description" content="Clariño acompaña ás persoas en momentos de cambio, axudándoas a recuperar a orde, a claridade e o equilibrio nos seus espazos: mudanzas, reorganizacións e novas etapas." />
   <link rel="canonical" href="https://clarino.es/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Clarino" />
-  <meta property="og:description" content="Estamos preparando algo especial." />
+  <meta property="og:title" content="Clariño — Orde, claridade e equilibrio" />
+  <meta property="og:description" content="Acompañamento profesional en momentos de cambio: mudanzas, reorganizacións e novas etapas." />
   <meta property="og:url" content="https://clarino.es/" />
-  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale" content="gl_ES" />
+  <meta property="og:image" content="https://clarino.es/assets/photos/hero-cajas.jpg" />
+  <meta name="theme-color" content="#61672A" />
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <div class="bg"></div>
 
-  <main class="hero">
-    <header class="brand">
-      <img src="assets/logo.svg" alt="Clarino" width="48" height="48" />
-      <span>Clarino</span>
-    </header>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <a href="#inicio" class="logo" aria-label="Clariño — inicio">
+      <img class="logo-white" src="assets/logo-clarino-white.png" alt="Clariño" />
+      <img class="logo-dark"  src="assets/logo-clarino-dark.png"  alt="Clariño" />
+    </a>
 
-    <h1>Estamos preparando algo especial</h1>
-    <p class="lead">
-      Nuestra nueva web está en camino. Muy pronto podrás conocer todo lo que
-      estamos construyendo.
-    </p>
+    <nav class="nav" id="nav">
+      <a href="#filosofia">Filosofía</a>
+      <a href="#servizos">Servizos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#galeria">Traballos</a>
+      <a href="#contacto" class="btn btn--ghost">Fala con nós</a>
+    </nav>
 
-    <form class="notify" action="#" method="post" onsubmit="return false;">
-      <input type="email" name="email" placeholder="tu@email.com" aria-label="Correo electrónico" required />
-      <button type="submit">Avísame</button>
-    </form>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <footer class="foot">
-      <a href="mailto:info@clarino.es">info@clarino.es</a>
-      <span>&copy; <span id="year"></span> Clarino</span>
-    </footer>
-  </main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <img class="hero__wordmark" src="assets/logo-clarino-white.png" alt="Clariño" />
+      <h1>Poñer <strong>orde</strong> nos momentos de cambio</h1>
+      <p>Acompañámoste para recuperar a claridade e o equilibrio nos teus espazos, ao teu ritmo e respectando o que de verdade importa.</p>
+      <div class="hero__cta">
+        <a href="#contacto" class="btn btn--light">Comeza o teu proceso</a>
+        <a href="#proceso" class="btn btn--outline-light">Como traballamos</a>
+      </div>
+    </div>
+    <div class="hero__scroll">baixa</div>
+  </section>
+
+  <!-- ============ FILOSOFÍA ============ -->
+  <section class="section" id="filosofia">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Quen somos</span>
+        <h2>Ordenar non é eliminar: é quedar co importante e atoparlle o seu lugar</h2>
+        <p>Clariño nace para acompañar ás persoas en momentos de cambio, axudándoas a recuperar a orde, a claridade e o equilibrio nos seus espazos.</p>
+        <p>Somos unha marca próxima e sensible que entende a organización como un proceso persoal, adaptándose a cada situación e ofrecendo apoio en mudanzas, reorganizacións ou etapas vitais que requiren poñer orde e comezar de novo.</p>
+        <div class="values">
+          <span>Acompañar</span>
+          <span>Ordenar</span>
+          <span>Claridade</span>
+          <span>Equilibrio</span>
+        </div>
+      </div>
+      <div class="reveal split__media">
+        <img src="assets/photos/foto-caixas-verdes.jpg" alt="Caixas de organización ordenadas" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVIZOS ============ -->
+  <section class="section section--alt" id="servizos">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:640px; margin:0 auto 3rem;">
+        <span class="eyebrow">Servizos</span>
+        <h2>Apoio en cada tipo de proceso</h2>
+        <p class="lead" style="margin:0 auto;">Adaptámonos a cada momento vital. Estas son as formas máis habituais nas que podemos acompañarte.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8l9-5 9 5v8l-9 5-9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+          </div>
+          <h3>Mudanzas</h3>
+          <p>Planificamos, clasificamos e organizamos antes, durante e despois da túa mudanza para que chegues a un fogar xa en orde.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V6a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 9h6M8 13h8M8 17h5"/></svg>
+          </div>
+          <h3>Reorganización de espazos</h3>
+          <p>Repensamos armarios, cociñas, despachos ou trasteiros para crear sistemas de orde sinxelos, funcionais e fáciles de manter.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 10c3 0 5-2 7-4M19 14c-3 0-5 2-7 4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>Novas etapas vitais</h3>
+          <p>Acompañámoste con sensibilidade nos cambios importantes —un baleirado, unha herdanza, un novo comezo— respectando cada historia.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESO ============ -->
+  <section class="section section--oliva" id="proceso">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:640px; margin:0 auto;">
+        <span class="eyebrow">O proceso</span>
+        <h2>Do desorde á claridade</h2>
+        <p class="lead" style="margin:0 auto; color:rgba(255,255,255,.9);">Partimos dunha situación complexa e acompañámoste, paso a paso, ata atopar unha nova orde máis clara, funcional e equilibrada.</p>
+      </div>
+
+      <svg class="wave" id="wave" viewBox="0 0 620 90" role="presentation" style="margin-top:2.5rem;">
+        <path d="M14,52 C14,20 66,16 74,44 C80,66 40,72 44,48 C48,26 92,34 108,50 C126,68 150,40 176,52 C206,66 232,44 262,54 C300,66 336,54 380,56 C440,58 520,56 606,56" />
+      </svg>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__n">1</div>
+          <h3>Escoita</h3>
+          <p>Coñecemos a túa situación, o teu espazo e o que necesitas neste momento.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__n">2</div>
+          <h3>Clasificar</h3>
+          <p>Separamos, decidimos e quedamos co que aporta valor, sen presa.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__n">3</div>
+          <h3>Ordenar</h3>
+          <p>Creamos un sistema claro e funcional, pensado para o teu día a día.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__n">4</div>
+          <h3>Equilibrio</h3>
+          <p>Un espazo en calma que podes manter con facilidade co paso do tempo.</p>
+        </div>
+      </div>
+
+      <p class="formula reveal">proceso <b>+</b> orde <b>=</b> resultado</p>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:640px; margin:0 auto 2.6rem;">
+        <span class="eyebrow">Traballos</span>
+        <h2>Espazos que respiran</h2>
+        <p class="lead" style="margin:0 auto;">Do nó que se desfai á liña clara: pequenos e grandes procesos de transformación.</p>
+      </div>
+      <div class="gallery reveal">
+        <figure><img src="assets/photos/foto-caixas-verdes.jpg" alt="Caixas ordenadas" loading="lazy" /></figure>
+        <figure><img src="assets/photos/foto-texturas.jpg" alt="Téxtiles ordenados" loading="lazy" /></figure>
+        <figure><img src="assets/photos/foto-porta.jpg" alt="Caixas apiladas nun espazo" loading="lazy" /></figure>
+        <figure><img src="assets/photos/foto-corda.jpg" alt="Corda enredada — o nó que se desfai" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section--alt" id="contacto">
+    <div class="container contact">
+      <div class="contact__info reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2>Comecemos a poñer orde</h2>
+        <p>Cóntanos que necesitas e buscamos xuntas o mellor xeito de acompañarte. Escribímosche sen compromiso.</p>
+        <p style="margin-top:1.6rem;">
+          <strong>Correo</strong><br>
+          <a href="mailto:info@clarino.es">info@clarino.es</a>
+        </p>
+        <p>
+          <strong>Zona</strong><br>
+          Galicia · desprazamentos a consultar
+        </p>
+      </div>
+
+      <form class="form reveal" action="https://formsubmit.co/info@clarino.es" method="POST">
+        <input type="hidden" name="_subject" value="Nova consulta desde clarino.es" />
+        <input type="hidden" name="_captcha" value="false" />
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="O teu nome" required />
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" name="email" placeholder="tu@email.com" required />
+        <label for="mensaxe">Como podemos axudarte?</label>
+        <textarea id="mensaxe" name="mensaxe" placeholder="Cóntanos brevemente a túa situación…" required></textarea>
+        <button type="submit" class="btn btn--primary" style="justify-content:center;">Enviar mensaxe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-grid">
+        <img src="assets/logo-clarino-white.png" alt="Clariño" />
+        <nav style="display:flex; gap:22px; flex-wrap:wrap;">
+          <a href="#filosofia">Filosofía</a>
+          <a href="#servizos">Servizos</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+      <div class="legal">
+        <span>&copy; <span id="year"></span> Clariño · Orde, claridade e equilibrio</span>
+        <span><a href="mailto:info@clarino.es">info@clarino.es</a></span>
+      </div>
+    </div>
+  </footer>
 
   <script>
+    // Ano actual
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Header ao facer scroll
+    const header = document.getElementById('header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Menú móbil
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    // Reveal + animación da onda ao entrar na vista
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal, #wave').forEach(el => io.observe(el));
   </script>
 </body>
 </html>
